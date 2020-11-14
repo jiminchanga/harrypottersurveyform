@@ -1,0 +1,201 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+      <link rel="stylesheet" type="text/css" href="harrypotter.css">
+
+<img id="hp-text" class="hp-text" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/2180px-Harry_Potter_wordmark.svg.png" width=70%></img>
+
+
+<h1 id="title" class="text-center">SURVEY FORM</h1>
+
+ <p id="description" class="description text-center">coded by <strong><a href="https://www.freecodecamp.org/aishahbanana">AISHAHBANANA</a></strong> for freeCodeCamp</p>
+  
+ 
+
+<!-- IMAGES -->
+
+
+<!-- FORMS --> 
+<div id="body1">
+<form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <h3>Favourite movie?</h3>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select favourite movie</option>
+        <option value="philosopher">Harry Potter and the Philosopher's Stone </option>
+        <option value="chamber">Harry Potter and the Chamber of Secrets</option>
+        <option value="prisoner">Harry Potter and the Prisoner of Azkaban</option>
+        <option value=goblet>Harry Potter and the Goblet of Fire</option>
+        <option value="phoenix">Harry Potter and the Order of the Phoenix</option>
+        <option value="prince">Harry Potter and the Half-Blood Prince</option><option value="deathly">Harry Potter and the Deathly Hallows: Part 1</option><option value="deathly">Harry Potter and the Deathly Hallows: Part 2</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <h3>Which Hogwarts House do you belong in?</h3>
+      <label>
+        <input
+          name="user-recommend"
+          value="Gryffindor"
+          type="radio"
+          class="input-radio"
+          checked
+        />Gryffindor</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Hufflepuff"
+          type="radio"
+          class="input-radio"
+        />Hufflepuff</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Ravenclaw"
+          type="radio"
+          class="input-radio"
+        />Ravenclaw</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Slytherin"
+          type="radio"
+          class="input-radio"
+        />Slytherin</label
+      >
+    </div>
+
+    <div class="form-group">
+      <h3>
+        Favourite Hogwarts Teacher?
+      </h3>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="snape">Severus Snape</option>
+        <option value="albus">Albus Dumbledore</option>
+        <option value="lockehart">Gilderoy Lockehart</option>
+        <option value="umbridge">Dolores Umbridge</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <h3>
+        Favourite Hogwarts family?
+        <span class="clue">(Check all that apply)</span>
+      </h3>
+
+      <label
+        ><input
+          name="prefer"
+          value="Potters"
+          type="checkbox"
+          class="input-checkbox"
+        />Potters
+       
+     </label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Weasleys"
+          type="checkbox"
+          class="input-checkbox"
+        />Weasleys</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Grangers"
+          type="checkbox"
+          class="input-checkbox"
+        />Grangers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Malfoys"
+          type="checkbox"
+          class="input-checkbox"
+        />Malfoys</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Longbottoms"
+          type="checkbox"
+          class="input-checkbox"
+        />Longbottoms</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+     
+    </div>
+
+    <div class="form-group">
+      <h3>Any comments?</h3>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group" "button-holder">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</body>
